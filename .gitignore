@@ -1,0 +1,13 @@
+# Mac OS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Box cloud sync artifacts
+.boxsync
+*.boxattr
+
+# Common design/office temporary files
+~$*
+.~lock.*
+*.tmp
