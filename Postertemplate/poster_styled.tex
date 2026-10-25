@@ -109,28 +109,26 @@ giveninits=true,doi=false,url=false,isbn=false,eprint=false]{biblatex}
     \block{Results}{    
 
   \centering
-  \captionof{table}{Effects on meso-scale structure: 30 yrs, 13.42\%, $\alpha{=}0.9$ in cluster-aware rows; IKC at $k{=}20$; conductance for Leiden CPM (res. 0.1) clusters of $\ge10$ papers (lower = better separated).}
-  \adjustbox{max width=\linewidth}{%
+  \captionof{table}{Effects on meso-scale structure: 30 yrs, 13.42\% growth. $\alpha{=}0.9$ in the field- and cluster-aware rows (random in baseline. Max cited = citations to the most-cited paper. IKC = count of IKC clusters with $k{=}20$ (\% of nodes). Med cond. = median conductance of Leiden CPM (res. 0.1) clusters of $\ge10$ papers (lower = better separated); these hold 62.5\%, 1.2\%, 35.1\% and 58.4\% of papers in the four rows. Cond $<0.5$ = share of those clusters with conductance below 0.5.}
+\adjustbox{max width=\linewidth}{%
   \begin{tabular}{lrrrr}
-  \toprule
-  Condition & Largest paper & IKC clusters (\% papers) & Median cond. & Clusters $<0.5$ \\
-  \midrule
-  Baseline & 126,378 & 1 (0.01) & 0.82 & 0\% \\
-  Cls-aware, 0.01, $\theta{=}50$ & 25,746 & 9 (10.1) & 0.80 & 9.1\% \\
-  Cls-aware, 0.1, $\theta{=}10$ & \textbf{22,383} & \textbf{17 (16.6)} & \textbf{0.55} & \textbf{46.7\%} \\
-  \bottomrule
-  \end{tabular}
-  }
+\toprule
+Condition & max cited & IKC (\%) & med cond. & \% clusters $<0.5$ \\
+\midrule
+Baseline & 126,378 & 1 (0.01) & 0.82 & 0\% \\
+Field-aware, 5 fields, $\theta{=}50$ & 209,235 & 8 (2.3) & 0.90 & 0\% \\
+Cluster-aware, 0.01, $\theta{=}50$ & 25,746 & 9 (10.1) & 0.80 & 9.1\% \\
+Cluster-aware, 0.1, $\theta{=}10$ & \textbf{22,383} & \textbf{17 (16.6)} & \textbf{0.55} & \textbf{46.7\%} \\
+\bottomrule
+\end{tabular}
 }
+}  % close the Results block
  
  \column{0.32}
     
     \block{Conclusions}{
     \begin{itemize}
-        \item We compared AE with state-of-the-art methods on CMAP dataset, which contains measurements of gene expression for more than 1 million samples.
-        \item We measured accuracy in terms of root mean square error (RMSE), mean absolute error (MAE), and cosine similarity, which is an alignment measure. 
-        \item The training and evaluation are done in a leave-one-out manner. The boxplots show error (with mean and standard deviation) across 519 samples.
-       % \begin{tikzfigure}[] \includegraphics[width=0.58\linewidth]{figures/rmse_boxplot_all.png} \end{tikzfigure}    
+        \item We concluded eff all
     \end{itemize} 
     \vspace{5mm}   
     }
