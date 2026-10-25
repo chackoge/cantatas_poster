@@ -122,6 +122,29 @@ Cluster-aware, 0.1, $\theta{=}10$ & \textbf{22,383} & \textbf{17 (16.6)} & \text
 \bottomrule
 \end{tabular}
 }
+
+\vspace{5 mm}
+
+% Poster table, macroscale: concentration and triangle counts. Requires booktabs and adjustbox. Same four rows as poster_cluster_aware_table.tex.
+% Source: deltacon_testing/local_structure/macro_table.py (triangles validated against an independent count on a 50k-paper slice), 2026-10-25.
+% Runs: r0 (no community mechanism), mf_t50_ahi (field-aware), c01t50_ahi_pin (cluster-aware, labels 0.01, theta 50), c1t10_ahi (labels 0.1,
+% theta 10); alpha=0.9 in the community-aware rows. 30 simulated years at 13.42% growth to 1,166,892 papers; single replicates.
+% Caption text:
+%   Effects on macro-scale structure. Top-10 / Top 1\% = share of all citations received by the 10 most-cited papers / by the most-cited 1\% of
+%   cited papers. Gini = inequality of citations received (0 = equal, 1 = one paper has all). Triangles = closed triples of papers (undirected
+%   count), in millions and per paper.
+\captionof{table}{Effects on macro-scale structure. Top-10 / Top 1\% = share of all citations received by the 10 most-cited papers / by the most-cited 1\% of cited papers. Triangles = closed triples of papers (undirected count), in millions and per paper.}
+\adjustbox{max width=\linewidth}{%
+\begin{tabular}{lrrrr}
+\toprule
+Condition & Top-10 & Top 1\% & Triangles (M) & Per paper \\
+\midrule
+No community mechanism & 4.3\% & 42.3\% & 25.8 & 22.1 \\
+Field-aware, 5 fields, $\theta{=}50$ & 7.5\% & 63.6\% & 29.6 & 25.4 \\
+Cluster-aware, 0.01, $\theta{=}50$ & 0.9\% & 30.1\% & 37.7 & 32.3 \\
+Cluster-aware, 0.1, $\theta{=}10$ & \textbf{0.4\%} & \textbf{16.1\%} & \textbf{66.8} & \textbf{57.3} \\
+\bottomrule
+\end{tabular}}
 }  % close the Results block
  
  \column{0.32}
